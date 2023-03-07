@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		547F4FE529B6D97C00C2A908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F4FE429B6D97C00C2A908 /* AppDelegate.swift */; };
+		547F4FE729B6D97C00C2A908 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F4FE629B6D97C00C2A908 /* SceneDelegate.swift */; };
+		547F4FE929B6D97C00C2A908 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F4FE829B6D97C00C2A908 /* ViewController.swift */; };
+		547F4FEC29B6D97C00C2A908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547F4FEA29B6D97C00C2A908 /* Main.storyboard */; };
+		547F4FEE29B6D97D00C2A908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 547F4FED29B6D97D00C2A908 /* Assets.xcassets */; };
+		547F4FF129B6D97D00C2A908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547F4FEF29B6D97D00C2A908 /* LaunchScreen.storyboard */; };
+		547F4FFC29B6D97D00C2A908 /* OTT_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F4FFB29B6D97D00C2A908 /* OTT_CloneTests.swift */; };
+		547F500629B6D97D00C2A908 /* OTT_CloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F500529B6D97D00C2A908 /* OTT_CloneUITests.swift */; };
+		547F500829B6D97D00C2A908 /* OTT_CloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F500729B6D97D00C2A908 /* OTT_CloneUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		547F4FF829B6D97D00C2A908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 547F4FD929B6D97C00C2A908 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 547F4FE029B6D97C00C2A908;
+			remoteInfo = OTT_Clone;
+		};
+		547F500229B6D97D00C2A908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 547F4FD929B6D97C00C2A908 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 547F4FE029B6D97C00C2A908;
+			remoteInfo = OTT_Clone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		547F4FE129B6D97C00C2A908 /* OTT_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTT_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		547F4FE429B6D97C00C2A908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		547F4FE629B6D97C00C2A908 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		547F4FE829B6D97C00C2A908 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		547F4FEB29B6D97C00C2A908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		547F4FED29B6D97D00C2A908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		547F4FF029B6D97D00C2A908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		547F4FF229B6D97D00C2A908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		547F4FF729B6D97D00C2A908 /* OTT_CloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTT_CloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		547F4FFB29B6D97D00C2A908 /* OTT_CloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTT_CloneTests.swift; sourceTree = "<group>"; };
+		547F500129B6D97D00C2A908 /* OTT_CloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTT_CloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		547F500529B6D97D00C2A908 /* OTT_CloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTT_CloneUITests.swift; sourceTree = "<group>"; };
+		547F500729B6D97D00C2A908 /* OTT_CloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTT_CloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		547F4FDE29B6D97C00C2A908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547F4FF429B6D97D00C2A908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547F4FFE29B6D97D00C2A908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		547F4FD829B6D97C00C2A908 = {
+			isa = PBXGroup;
+			children = (
+				547F4FE329B6D97C00C2A908 /* OTT_Clone */,
+				547F4FFA29B6D97D00C2A908 /* OTT_CloneTests */,
+				547F500429B6D97D00C2A908 /* OTT_CloneUITests */,
+				547F4FE229B6D97C00C2A908 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		547F4FE229B6D97C00C2A908 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				547F4FE129B6D97C00C2A908 /* OTT_Clone.app */,
+				547F4FF729B6D97D00C2A908 /* OTT_CloneTests.xctest */,
+				547F500129B6D97D00C2A908 /* OTT_CloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		547F4FE329B6D97C00C2A908 /* OTT_Clone */ = {
+			isa = PBXGroup;
+			children = (
+				547F4FE429B6D97C00C2A908 /* AppDelegate.swift */,
+				547F4FE629B6D97C00C2A908 /* SceneDelegate.swift */,
+				547F4FE829B6D97C00C2A908 /* ViewController.swift */,
+				547F4FEA29B6D97C00C2A908 /* Main.storyboard */,
+				547F4FED29B6D97D00C2A908 /* Assets.xcassets */,
+				547F4FEF29B6D97D00C2A908 /* LaunchScreen.storyboard */,
+				547F4FF229B6D97D00C2A908 /* Info.plist */,
+			);
+			path = OTT_Clone;
+			sourceTree = "<group>";
+		};
+		547F4FFA29B6D97D00C2A908 /* OTT_CloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				547F4FFB29B6D97D00C2A908 /* OTT_CloneTests.swift */,
+			);
+			path = OTT_CloneTests;
+			sourceTree = "<group>";
+		};
+		547F500429B6D97D00C2A908 /* OTT_CloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				547F500529B6D97D00C2A908 /* OTT_CloneUITests.swift */,
+				547F500729B6D97D00C2A908 /* OTT_CloneUITestsLaunchTests.swift */,
+			);
+			path = OTT_CloneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		547F4FE029B6D97C00C2A908 /* OTT_Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547F500B29B6D97D00C2A908 /* Build configuration list for PBXNativeTarget "OTT_Clone" */;
+			buildPhases = (
+				547F4FDD29B6D97C00C2A908 /* Sources */,
+				547F4FDE29B6D97C00C2A908 /* Frameworks */,
+				547F4FDF29B6D97C00C2A908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTT_Clone;
+			productName = OTT_Clone;
+			productReference = 547F4FE129B6D97C00C2A908 /* OTT_Clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		547F4FF629B6D97D00C2A908 /* OTT_CloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547F500E29B6D97D00C2A908 /* Build configuration list for PBXNativeTarget "OTT_CloneTests" */;
+			buildPhases = (
+				547F4FF329B6D97D00C2A908 /* Sources */,
+				547F4FF429B6D97D00C2A908 /* Frameworks */,
+				547F4FF529B6D97D00C2A908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				547F4FF929B6D97D00C2A908 /* PBXTargetDependency */,
+			);
+			name = OTT_CloneTests;
+			productName = OTT_CloneTests;
+			productReference = 547F4FF729B6D97D00C2A908 /* OTT_CloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		547F500029B6D97D00C2A908 /* OTT_CloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547F501129B6D97D00C2A908 /* Build configuration list for PBXNativeTarget "OTT_CloneUITests" */;
+			buildPhases = (
+				547F4FFD29B6D97D00C2A908 /* Sources */,
+				547F4FFE29B6D97D00C2A908 /* Frameworks */,
+				547F4FFF29B6D97D00C2A908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				547F500329B6D97D00C2A908 /* PBXTargetDependency */,
+			);
+			name = OTT_CloneUITests;
+			productName = OTT_CloneUITests;
+			productReference = 547F500129B6D97D00C2A908 /* OTT_CloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		547F4FD929B6D97C00C2A908 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					547F4FE029B6D97C00C2A908 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					547F4FF629B6D97D00C2A908 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 547F4FE029B6D97C00C2A908;
+					};
+					547F500029B6D97D00C2A908 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 547F4FE029B6D97C00C2A908;
+					};
+				};
+			};
+			buildConfigurationList = 547F4FDC29B6D97C00C2A908 /* Build configuration list for PBXProject "OTT_Clone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 547F4FD829B6D97C00C2A908;
+			productRefGroup = 547F4FE229B6D97C00C2A908 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				547F4FE029B6D97C00C2A908 /* OTT_Clone */,
+				547F4FF629B6D97D00C2A908 /* OTT_CloneTests */,
+				547F500029B6D97D00C2A908 /* OTT_CloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		547F4FDF29B6D97C00C2A908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547F4FF129B6D97D00C2A908 /* LaunchScreen.storyboard in Resources */,
+				547F4FEE29B6D97D00C2A908 /* Assets.xcassets in Resources */,
+				547F4FEC29B6D97C00C2A908 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547F4FF529B6D97D00C2A908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547F4FFF29B6D97D00C2A908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		547F4FDD29B6D97C00C2A908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547F4FE929B6D97C00C2A908 /* ViewController.swift in Sources */,
+				547F4FE529B6D97C00C2A908 /* AppDelegate.swift in Sources */,
+				547F4FE729B6D97C00C2A908 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547F4FF329B6D97D00C2A908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547F4FFC29B6D97D00C2A908 /* OTT_CloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547F4FFD29B6D97D00C2A908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547F500829B6D97D00C2A908 /* OTT_CloneUITestsLaunchTests.swift in Sources */,
+				547F500629B6D97D00C2A908 /* OTT_CloneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		547F4FF929B6D97D00C2A908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 547F4FE029B6D97C00C2A908 /* OTT_Clone */;
+			targetProxy = 547F4FF829B6D97D00C2A908 /* PBXContainerItemProxy */;
+		};
+		547F500329B6D97D00C2A908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 547F4FE029B6D97C00C2A908 /* OTT_Clone */;
+			targetProxy = 547F500229B6D97D00C2A908 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		547F4FEA29B6D97C00C2A908 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547F4FEB29B6D97C00C2A908 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		547F4FEF29B6D97D00C2A908 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547F4FF029B6D97D00C2A908 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		547F500929B6D97D00C2A908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		547F500A29B6D97D00C2A908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		547F500C29B6D97D00C2A908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTT_Clone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ostone.OTT-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		547F500D29B6D97D00C2A908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTT_Clone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ostone.OTT-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		547F500F29B6D97D00C2A908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ostone.OTT-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTT_Clone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OTT_Clone";
+			};
+			name = Debug;
+		};
+		547F501029B6D97D00C2A908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ostone.OTT-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTT_Clone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OTT_Clone";
+			};
+			name = Release;
+		};
+		547F501229B6D97D00C2A908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ostone.OTT-CloneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OTT_Clone;
+			};
+			name = Debug;
+		};
+		547F501329B6D97D00C2A908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ostone.OTT-CloneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OTT_Clone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		547F4FDC29B6D97C00C2A908 /* Build configuration list for PBXProject "OTT_Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547F500929B6D97D00C2A908 /* Debug */,
+				547F500A29B6D97D00C2A908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547F500B29B6D97D00C2A908 /* Build configuration list for PBXNativeTarget "OTT_Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547F500C29B6D97D00C2A908 /* Debug */,
+				547F500D29B6D97D00C2A908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547F500E29B6D97D00C2A908 /* Build configuration list for PBXNativeTarget "OTT_CloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547F500F29B6D97D00C2A908 /* Debug */,
+				547F501029B6D97D00C2A908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547F501129B6D97D00C2A908 /* Build configuration list for PBXNativeTarget "OTT_CloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547F501229B6D97D00C2A908 /* Debug */,
+				547F501329B6D97D00C2A908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 547F4FD929B6D97C00C2A908 /* Project object */;
+}
