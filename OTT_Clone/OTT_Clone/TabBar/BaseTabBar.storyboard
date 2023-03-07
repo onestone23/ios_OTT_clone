@@ -9,7 +9,7 @@
         <!--Main Tab Bar View Controller-->
         <scene sceneID="T5s-BN-edl">
             <objects>
-                <tabBarController id="J7F-c8-1Hz" customClass="MainTabBarViewController" customModule="OTT_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J7F-c8-1Hz" customClass="MainTabBarViewController" customModule="OTT_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9bf-So-dOZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

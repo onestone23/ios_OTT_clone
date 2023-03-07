@@ -18,6 +18,8 @@
 		547F500829B6D97D00C2A908 /* OTT_CloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F500729B6D97D00C2A908 /* OTT_CloneUITestsLaunchTests.swift */; };
 		54B8841529B6EE4700828C9B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8841429B6EE4700828C9B /* MainTabBarViewController.swift */; };
 		54B8841729B6EE5400828C9B /* BaseTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B8841629B6EE5400828C9B /* BaseTabBar.storyboard */; };
+		54B8841929B6F6AD00828C9B /* NewHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8841829B6F6AD00828C9B /* NewHotViewController.swift */; };
+		54B8841B29B6F6B600828C9B /* NewHot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B8841A29B6F6B600828C9B /* NewHot.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		547F500729B6D97D00C2A908 /* OTT_CloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTT_CloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		54B8841429B6EE4700828C9B /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		54B8841629B6EE5400828C9B /* BaseTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseTabBar.storyboard; sourceTree = "<group>"; };
+		54B8841829B6F6AD00828C9B /* NewHotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHotViewController.swift; sourceTree = "<group>"; };
+		54B8841A29B6F6B600828C9B /* NewHot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewHot.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 		54B8841129B6EE1400828C9B /* NewHot */ = {
 			isa = PBXGroup;
 			children = (
+				54B8841829B6F6AD00828C9B /* NewHotViewController.swift */,
+				54B8841A29B6F6B600828C9B /* NewHot.storyboard */,
 			);
 			path = NewHot;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B8841B29B6F6B600828C9B /* NewHot.storyboard in Resources */,
 				547F4FF129B6D97D00C2A908 /* LaunchScreen.storyboard in Resources */,
 				547F4FEE29B6D97D00C2A908 /* Assets.xcassets in Resources */,
 				547F4FEC29B6D97C00C2A908 /* Home.storyboard in Resources */,
@@ -290,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				547F4FE929B6D97C00C2A908 /* HomeViewController.swift in Sources */,
+				54B8841929B6F6AD00828C9B /* NewHotViewController.swift in Sources */,
 				54B8841529B6EE4700828C9B /* MainTabBarViewController.swift in Sources */,
 				547F4FE529B6D97C00C2A908 /* AppDelegate.swift in Sources */,
 				547F4FE729B6D97C00C2A908 /* SceneDelegate.swift in Sources */,
