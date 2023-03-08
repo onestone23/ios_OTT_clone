@@ -12,14 +12,14 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let homeVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        // let homeVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
 
         let newHotVC = UIStoryboard(name: "NewHot", bundle: nil).instantiateViewController(withIdentifier: "NewHotViewController") as! NewHotViewController
         
         let homeNaviVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeNaviViewController") as! HomeNaviViewController
         
-//        homeVC.tabBarItem.title = "HOME"
-//        homeVC.tabBarItem.image = UIImage(systemName: "house")
+        homeNaviVC.tabBarItem.title = "HOME"
+        homeNaviVC.tabBarItem.image = UIImage(systemName: "house")
         
         newHotVC.tabBarItem.title = "NEW & HOT"
         newHotVC.tabBarItem.image = UIImage(systemName: "play.rectangle.on.rectangle")
@@ -30,7 +30,7 @@ class MainTabBarViewController: UITabBarController {
         let tabBarAppeaarance = UITabBarAppearance()
         tabBarAppeaarance.backgroundColor = .black
         // 아래 설정으로 블러같은 이펙트도 줄 수 있음
-//        tabBarAppeaarance.backgroundEffect
+        // tabBarAppeaarance.backgroundEffect
         
         // 탭바 아이템에 대한 설정
         let tabBarItemAppearance = UITabBarItemAppearance()
