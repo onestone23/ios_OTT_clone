@@ -20,6 +20,7 @@
 		54B8841729B6EE5400828C9B /* BaseTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B8841629B6EE5400828C9B /* BaseTabBar.storyboard */; };
 		54B8841929B6F6AD00828C9B /* NewHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8841829B6F6AD00828C9B /* NewHotViewController.swift */; };
 		54B8841B29B6F6B600828C9B /* NewHot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B8841A29B6F6B600828C9B /* NewHot.storyboard */; };
+		54B8841D29B735F200828C9B /* HomeNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8841C29B735F200828C9B /* HomeNaviViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		54B8841629B6EE5400828C9B /* BaseTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseTabBar.storyboard; sourceTree = "<group>"; };
 		54B8841829B6F6AD00828C9B /* NewHotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHotViewController.swift; sourceTree = "<group>"; };
 		54B8841A29B6F6B600828C9B /* NewHot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewHot.storyboard; sourceTree = "<group>"; };
+		54B8841C29B735F200828C9B /* HomeNaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNaviViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		54B8841229B6EE1E00828C9B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				54B8841C29B735F200828C9B /* HomeNaviViewController.swift */,
 				547F4FE829B6D97C00C2A908 /* HomeViewController.swift */,
 				547F4FEA29B6D97C00C2A908 /* Home.storyboard */,
 			);
@@ -299,6 +302,7 @@
 				547F4FE929B6D97C00C2A908 /* HomeViewController.swift in Sources */,
 				54B8841929B6F6AD00828C9B /* NewHotViewController.swift in Sources */,
 				54B8841529B6EE4700828C9B /* MainTabBarViewController.swift in Sources */,
+				54B8841D29B735F200828C9B /* HomeNaviViewController.swift in Sources */,
 				547F4FE529B6D97C00C2A908 /* AppDelegate.swift in Sources */,
 				547F4FE729B6D97C00C2A908 /* SceneDelegate.swift in Sources */,
 			);
