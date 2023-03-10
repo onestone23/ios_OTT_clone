@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,17 +22,28 @@ class HomeViewController: UIViewController {
         tableView.tableHeaderView = headerView
         tableView.delegate = self
         tableView.dataSource = self
-        NetworkLayer.request()
+        tableView.register(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
     }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return MediaType.allCases.count
+    }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as? HomeCell else {
+            return UITableViewCell()
+        }
+        
+        cell.requestMediaAPI(type: MediaType(rawValue: indexPath.section))
+        
+        return cell
     }
 }
 

@@ -5,13 +5,23 @@
 //  Created by leewonseok on 2023/03/10.
 //
 
-import Foundation
+import UIKit
 
 class NetworkLayer {
     
-    static func request() {
-        let term = URLQueryItem(name: "term", value: "movie")
-        let media = URLQueryItem(name: "media", value: "movie")
+    static func request(urlString: String, completion: @escaping (UIImage?) -> Void) {
+        guard let url = URL(string: urlString) else { return }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let data {
+                let image = UIImage(data: data)
+                completion(image)
+            }
+        }.resume()
+    }
+    
+    static func request(type: MediaType, completion: @escaping (MovieModel) -> Void) {
+        let term = URLQueryItem(name: "term", value: type.queryValue)
+        let media = URLQueryItem(name: "media", value: type.queryValue)
         
         let querys = [term, media]
         
@@ -27,7 +37,7 @@ class NetworkLayer {
             if let data {
                 do {
                     let movieModel = try JSONDecoder().decode(MovieModel.self, from: data)
-                    print(movieModel)
+                    completion(movieModel)
                 } catch {
                     print("decode Error: ",error)
                 }
