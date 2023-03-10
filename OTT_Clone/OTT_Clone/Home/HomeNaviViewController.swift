@@ -8,13 +8,20 @@
 import UIKit
 
 class HomeNaviViewController: UINavigationController {
+    
+    var effectViewAlpha: CGFloat = 0 {
+        didSet {
+            visuallEffectView.alpha = effectViewAlpha
+        }
+    }
     // 상단 스테이터스바 크기(높이)
     let statusBarHeight = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.statusBarManager?.statusBarFrame.height ?? 0
 
-    lazy var visuallEffectView: UIVisualEffectView = {
+    lazy private var visuallEffectView: UIVisualEffectView = {
         let effectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
         // 지정된 크기보다 더 지정하는 방법
         effectView.frame = self.navigationBar.bounds.insetBy(dx: 0, dy: -statusBarHeight).offsetBy(dx: 0, dy: -statusBarHeight)
+        effectView.alpha = 0
         return effectView
     }()
     
