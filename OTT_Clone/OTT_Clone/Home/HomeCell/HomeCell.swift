@@ -21,7 +21,7 @@ class HomeCell: UITableViewCell {
         flowLayout.scrollDirection = .horizontal
         flowLayout.minimumLineSpacing = 10
         collectionView.collectionViewLayout = flowLayout
-        
+        collectionView.backgroundColor = .black
         collectionView.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionViewCell")
     }
     
@@ -43,7 +43,7 @@ class HomeCell: UITableViewCell {
 
 extension HomeCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 130)
+        return CGSize(width: 110, height: 150)
     }
 }
 

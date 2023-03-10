@@ -23,13 +23,26 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
+        tableView.register(HomeTableViewHeaderView.self, forHeaderFooterViewReuseIdentifier: "HomeTableViewHeaderView")
+        tableView.backgroundColor = .black
     }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        
-//    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HomeTableViewHeaderView") as? HomeTableViewHeaderView else {
+            return UIView()
+        }
+        
+        headerView.title = MediaType(rawValue: section)?.title
+
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
