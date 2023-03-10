@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		542988E729BAED4C00629183 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542988E629BAED4C00629183 /* NetworkLayer.swift */; };
+		542988E929BAF5D700629183 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542988E829BAF5D700629183 /* MediaType.swift */; };
 		547F4FE529B6D97C00C2A908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F4FE429B6D97C00C2A908 /* AppDelegate.swift */; };
 		547F4FE729B6D97C00C2A908 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F4FE629B6D97C00C2A908 /* SceneDelegate.swift */; };
 		547F4FE929B6D97C00C2A908 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547F4FE829B6D97C00C2A908 /* HomeViewController.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		542988E629BAED4C00629183 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		542988E829BAF5D700629183 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		547F4FE129B6D97C00C2A908 /* OTT_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTT_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		547F4FE429B6D97C00C2A908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		547F4FE629B6D97C00C2A908 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				548FD35C29BAE8DA00091AF9 /* MovieModel.swift */,
 				542988E629BAED4C00629183 /* NetworkLayer.swift */,
+				542988E829BAF5D700629183 /* MediaType.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				54B8841529B6EE4700828C9B /* MainTabBarViewController.swift in Sources */,
 				542988E729BAED4C00629183 /* NetworkLayer.swift in Sources */,
 				54B8841D29B735F200828C9B /* HomeNaviViewController.swift in Sources */,
+				542988E929BAF5D700629183 /* MediaType.swift in Sources */,
 				548FD35929BAE5F300091AF9 /* HomeCollectionViewCell.swift in Sources */,
 				547F4FE529B6D97C00C2A908 /* AppDelegate.swift in Sources */,
 				547F4FE729B6D97C00C2A908 /* SceneDelegate.swift in Sources */,
