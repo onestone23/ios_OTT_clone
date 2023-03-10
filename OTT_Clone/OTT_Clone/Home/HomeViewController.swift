@@ -16,10 +16,10 @@ class HomeViewController: UIViewController {
         
         let headerView = HomeTableHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 400))
         
+        tableView.tableHeaderView = headerView
         // 헤더 뷰를 만약 스테이터스 바까지 사용하고싶다면 TableView 인스펙터 창의 content inset - never ( 스토리 보드 )
         // 코드로 할 때
         tableView.contentInsetAdjustmentBehavior = .never
-        tableView.tableHeaderView = headerView
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
@@ -27,6 +27,10 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        
+//    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -34,7 +38,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return MediaType.allCases.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as? HomeCell else {
@@ -44,6 +47,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.requestMediaAPI(type: MediaType(rawValue: indexPath.section))
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
 }
 
