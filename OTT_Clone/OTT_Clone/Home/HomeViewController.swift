@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
         tableView.tableHeaderView = headerView
         tableView.delegate = self
         tableView.dataSource = self
+        NetworkLayer.request()
     }
 }
 
