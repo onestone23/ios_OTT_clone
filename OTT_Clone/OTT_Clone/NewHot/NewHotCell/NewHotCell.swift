@@ -13,14 +13,14 @@ class NewHotCell: UITableViewCell {
     var baseContainerView: UIView = {
         let baseView = UIView()
         baseView.translatesAutoresizingMaskIntoConstraints = false
-        baseView.backgroundColor = .yellow
+        baseView.backgroundColor = .black
         return baseView
     }()
     
-    var moviewContainerView: UIView = {
+    var movieContainerView: UIView = {
         let movieView = UIView()
         movieView.translatesAutoresizingMaskIntoConstraints = false
-        movieView.backgroundColor = .gray
+        movieView.backgroundColor = .black
         return movieView
     }()
     
@@ -33,9 +33,19 @@ class NewHotCell: UITableViewCell {
         return imageView
     }()
     
+    var coverImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = UIImage(systemName: "photo")
+        imageView.clipsToBounds = true
+        return imageView
+    }()
+    
     var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
         return label
     }()
     
@@ -43,12 +53,14 @@ class NewHotCell: UITableViewCell {
         let label = UILabel()
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
         return label
     }()
     
     var dateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
         return label
     }()
     
@@ -62,20 +74,20 @@ class NewHotCell: UITableViewCell {
             settingTitle()
             settingDescription()
             requestThumbnailImage()
+            requestCoverImage()
         }
     }
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        self.contentView.backgroundColor = .black
         self.contentView.addSubview(baseContainerView)
-        baseContainerView.addSubview(moviewContainerView)
+        baseContainerView.addSubview(movieContainerView)
         baseContainerView.addSubview(thumbnail)
         baseContainerView.addSubview(dateLabel)
         baseContainerView.addSubview(titleLabel)
         baseContainerView.addSubview(descriptionLabel)
-        
         addBaseView()
         addMovieView()
         addMovieLayer()
@@ -83,6 +95,7 @@ class NewHotCell: UITableViewCell {
         addDateLabel()
         addTitleLabel()
         addDescriptionLabel()
+        addCoverImageWithSetAnchor()
     }
     
     required init?(coder: NSCoder) {
@@ -100,11 +113,30 @@ class NewHotCell: UITableViewCell {
     func moviePlay() {
         if self.player.timeControlStatus != .playing {
             self.player.play()
+            coverImageView.isHidden = true
         }
     }
     
     func moviewStop() {
         self.player.pause()
+        
+        if self.player.currentTime().seconds > 1 {
+            coverImageView.isHidden = true
+        } else {
+            coverImageView.isHidden = false
+        }
+        
+    }
+    
+    private func requestCoverImage() {
+        if let hasURL = movieResult?.artworkUrl {
+            NetworkLayer.request(urlString: hasURL) { image in
+                DispatchQueue.main.async {
+                    self.coverImageView.image = image
+                }
+            }
+            
+        }
     }
     
     private func requestThumbnailImage() {
@@ -161,17 +193,28 @@ class NewHotCell: UITableViewCell {
 
     private func addMovieView() {
         NSLayoutConstraint.activate([
-            moviewContainerView.topAnchor.constraint(equalTo: baseContainerView.topAnchor),
-            moviewContainerView.leftAnchor.constraint(equalTo: baseContainerView.leftAnchor),
-            moviewContainerView.rightAnchor.constraint(equalTo: baseContainerView.rightAnchor),
-            moviewContainerView.heightAnchor.constraint(equalToConstant: 200),
-            moviewContainerView.bottomAnchor.constraint(equalTo: thumbnail.topAnchor, constant: -10),
+            movieContainerView.topAnchor.constraint(equalTo: baseContainerView.topAnchor),
+            movieContainerView.leftAnchor.constraint(equalTo: baseContainerView.leftAnchor),
+            movieContainerView.rightAnchor.constraint(equalTo: baseContainerView.rightAnchor),
+            movieContainerView.heightAnchor.constraint(equalToConstant: 200),
+            movieContainerView.bottomAnchor.constraint(equalTo: thumbnail.topAnchor, constant: -10),
             
         ])
     }
     
+    private func addCoverImageWithSetAnchor() {
+        movieContainerView.addSubview(coverImageView)
+        
+        NSLayoutConstraint.activate([
+            coverImageView.leftAnchor.constraint(equalTo: movieContainerView.leftAnchor),
+            coverImageView.rightAnchor.constraint(equalTo: movieContainerView.rightAnchor),
+            coverImageView.topAnchor.constraint(equalTo: movieContainerView.topAnchor),
+            coverImageView.bottomAnchor.constraint(equalTo: movieContainerView.bottomAnchor),
+        ])
+    }
+    
     private func addMovieLayer() {
-        moviewContainerView.layer.addSublayer(playerLayer)
+        movieContainerView.layer.addSublayer(playerLayer)
         let width = UIScreen.main.bounds.width - 50
         let height = (width / 16) * 9
         playerLayer.frame = CGRect(x: 0, y: 0, width: width, height: height)

@@ -24,7 +24,23 @@ class MainTabBarViewController: UITabBarController {
         newHotVC.tabBarItem.title = "NEW & HOT"
         newHotVC.tabBarItem.image = UIImage(systemName: "play.rectangle.on.rectangle")
         
-        self.viewControllers = [homeNaviVC, newHotVC]
+        let naviVC = UINavigationController(rootViewController: newHotVC)
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundEffect = UIBlurEffect(style: .dark)
+        
+        naviVC.navigationBar.standardAppearance = appearance
+        naviVC.navigationBar.scrollEdgeAppearance = appearance
+        naviVC.navigationBar.compactAppearance = appearance
+        naviVC.navigationBar.compactScrollEdgeAppearance = appearance
+        
+//        naviVC.navigationBar.topItem?.title = "NEW & HOT"
+//        newHotVC.navigationItem.title = "NEW & HOT"
+    
+        // 안됨
+        // naviVC.navigationItem.title = "new hot"
+        
+        
+        self.viewControllers = [homeNaviVC, naviVC]
         
         // 탭바에 대한 설정
         let tabBarAppeaarance = UITabBarAppearance()

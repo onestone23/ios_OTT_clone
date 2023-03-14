@@ -21,12 +21,19 @@ class NewHotViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let label = UILabel()
+        label.text = "NEW & HOT"
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = .lightGray
+        self.navigationItem.titleView = label
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(NewHotCell.self, forCellReuseIdentifier: "NewHotCell")
         tableView.register(DateHeaderView.self, forHeaderFooterViewReuseIdentifier: "DateHeaderView")
-        
+        tableView.backgroundColor = .black
         NetworkLayer.request(type: .movie) { model in
             self.movieModel = model
         }
@@ -41,6 +48,7 @@ extension NewHotViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return movieModel?.resultCount ?? 0
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewHotCell", for: indexPath) as? NewHotCell else {
             return NewHotCell()
@@ -48,14 +56,14 @@ extension NewHotViewController: UITableViewDelegate, UITableViewDataSource {
         
         let movieResult = self.movieModel?.results[indexPath.section]
         cell.movieResult = movieResult
-    
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "DateHeaderView")
                 as? DateHeaderView else {
-             return DateHeaderView()
+            return DateHeaderView()
         }
         
         if let dateString = movieModel?.results[section].releaseDate {
@@ -78,17 +86,22 @@ extension NewHotViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
         }
-        
-        
-        
-        
         return headerView
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.001
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return CGFloat.leastNormalMagnitude
+    }
 }
+
 
 extension NewHotViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

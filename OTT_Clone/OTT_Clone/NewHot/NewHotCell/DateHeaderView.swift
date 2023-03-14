@@ -26,6 +26,7 @@ class DateHeaderView: UITableViewHeaderFooterView {
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         self.contentView.addSubview(dateLabel)
+//        self.contentView.backgroundColor = .black
         
         NSLayoutConstraint.activate([
             dateLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: 50),
