@@ -97,6 +97,16 @@ class NewHotCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func moviePlay() {
+        if self.player.timeControlStatus != .playing {
+            self.player.play()
+        }
+    }
+    
+    func moviewStop() {
+        self.player.pause()
+    }
+    
     private func requestThumbnailImage() {
         if let hasURL = movieResult?.artworkUrl {
             NetworkLayer.request(urlString: hasURL) { image in
