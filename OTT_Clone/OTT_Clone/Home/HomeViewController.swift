@@ -11,6 +11,10 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +29,21 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
         tableView.register(HomeTableViewHeaderView.self, forHeaderFooterViewReuseIdentifier: "HomeTableViewHeaderView")
         tableView.backgroundColor = .black
+        
+        registObserver()
+    }
+    
+    func registObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(presentDetailVC), name: NSNotification.Name(rawValue: "presentDetailVC"), object: nil)
+    }
+    
+    @objc func presentDetailVC(notification: Notification) {
+        if let hasResult = notification.object as? MovieResult {
+            let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        
+            detailVC.movieResult = hasResult
+            self.present(detailVC, animated: true)
+        }
     }
 }
 

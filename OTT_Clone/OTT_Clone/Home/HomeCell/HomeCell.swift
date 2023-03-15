@@ -48,6 +48,12 @@ extension HomeCell: UICollectionViewDelegateFlowLayout {
 }
 
 extension HomeCell: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let movieResult = movieModel?.results[indexPath.item]
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "presentDetailVC"), object: movieResult)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return movieModel?.resultCount ?? 0
     }

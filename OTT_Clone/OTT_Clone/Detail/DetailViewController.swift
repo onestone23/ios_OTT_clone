@@ -53,7 +53,7 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func stop(_ sender: UIButton) {
-        
+        player.pause()
     }
 
 }
