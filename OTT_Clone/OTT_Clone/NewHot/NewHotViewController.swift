@@ -88,6 +88,13 @@ extension NewHotViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return headerView
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movieResult = movieModel?.results[indexPath.section]
+        
+        let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        detailVC.movieResult = movieResult
+        self.present(detailVC, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
